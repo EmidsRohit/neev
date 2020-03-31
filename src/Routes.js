@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import NoMatchPage from "./components/common/NoMatchPage";
-import DashBoard from "./containers/DashBoard";
+import Solaris from "./containers/Solaris";
+import Login from "./components/Login/Login";
 
 export default class Routes extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" render={() => <DashBoard />} />
-        <Route exact path="/login" render={() => <div>Loginnnn</div>} />
+        <Route exact path="/solaris" render={() => <Solaris />} />
+        <Route exact path="/login" render={() => <Login />} />
         <Route component={NoMatchPage} />
       </Switch>
     );

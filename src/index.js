@@ -4,16 +4,16 @@ import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import * as serviceWorker from "./serviceWorker";
-import cytelTheme from "./materialComponents/cytelTheme";
+import solarisTheme from "./materialComponents/solarisTheme";
 import { MuiThemeProvider } from "@material-ui/core";
 import { BrowserRouter as Router } from "react-router-dom";
-
 import Routes from "./Routes";
+
 const configureStore = store();
 
 ReactDOM.render(
   <Provider store={configureStore}>
-    <MuiThemeProvider theme={cytelTheme}>
+    <MuiThemeProvider theme={solarisTheme}>
       <Router>
         <Routes />
       </Router>

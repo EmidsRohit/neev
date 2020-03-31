@@ -2,7 +2,7 @@ import { applyMiddleware, combineReducers, createStore, compose } from "redux";
 
 import createSagaMiddleware from "redux-saga";
 import actionWatcher from "../watcher";
-import studyReducer from "../reducers/studyReducer";
+import studyReducer from "../reducers/productReducer";
 import { createLogger } from "redux-logger";
 
 const rootReducer = combineReducers({

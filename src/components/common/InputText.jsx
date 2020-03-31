@@ -14,8 +14,9 @@ export default function InputText(props) {
     />
   );
 }
+
 InputText.defaultProps = {
-  error: false,
+  error: true,
   autoComplete: "off",
   helperText: "",
   value: "",

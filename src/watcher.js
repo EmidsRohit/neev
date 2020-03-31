@@ -1,7 +1,7 @@
 import { takeLatest } from "redux-saga/effects";
 
-import { getIncSaga } from "./sagas/studySaga";
+import { getProjects } from "./sagas/projectSagas";
 
 export default function* actionWatcher() {
-  yield takeLatest("INCREMENT", getIncSaga);
+  yield takeLatest("GET_PRODUCTS", getProjects);
 }
