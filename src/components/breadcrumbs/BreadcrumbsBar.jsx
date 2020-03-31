@@ -21,10 +21,12 @@ export default function BreadcrumbsBar() {
   const classes = useStyles();
   return (
     <Breadcrumbs className={classes.root} separator="›" aria-label="breadcrumb">
-      <Link color="inherit" href="/login">
+      {/* <Link color="inherit" href="/login">
         Projects
-      </Link>
-      <Typography color="textPrimary">Breadcrumb</Typography>
+      </Link> */}
+      <Typography variant="h6" className={classes.bar} color="textPrimary">
+        Projects
+      </Typography>
     </Breadcrumbs>
   );
 }
